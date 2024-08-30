@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch", // Configuration name
+            "type": "cppdbg", // Type of debugger
+            "request": "launch", // Launch mode
+            "program": "${workspaceFolder}/main", // Path to the program executable
+            "args": [], // Arguments to pass to the program
+            "stopAtEntry": false, // Do not stop at the entry point of the program
+            "cwd": "${workspaceFolder}", // Set the current working directory to the workspace folder
+            "environment": [], // Environment variables
+            "externalConsole": false, // Do not use an external console
+            "MIMode": "gdb", // Use GDB as the debugger
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build", // Task to run before launching the debugger
+            "miDebuggerPath": "/usr/bin/gdb", // Path to the GDB debugger
+            "logging": {
+                "trace": true, // Enable trace logging
+                "traceResponse": true, // Enable trace response logging
+                "engineLogging": true // Enable engine logging
+            },
+            "launchCompleteCommand": "exec-run", // Command to run after launching
+            "debugServerPath": "",
+            "debugServerArgs": "",
+            "serverStarted": "",
+            "filterStderr": false,
+            "filterStdout": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
