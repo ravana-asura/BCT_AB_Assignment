@@ -1,7 +1,2 @@
-# BCT_AB_Assignment
-
-this is an bct AB assignment submission page
-
-```
-    
-```
+# Kaushal Adhikari
+**Roll number->PUR080BCT036**
